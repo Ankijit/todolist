@@ -102,6 +102,7 @@ footer{
     display: block;
     height:5vh;
   }
+  
   .todoform{
     display: flex;
     overflow-y: auto;
@@ -155,6 +156,9 @@ footer{
     }
     .button{
       padding: 10px 8px;
+      margin: 10px;
+      position: absolute;
+      bottom:50px;
     }
     .listheading{
       font-size: 1.3rem;
@@ -163,5 +167,9 @@ footer{
     .items{
       width: 90%;
       font-size: 1rem;
+    }
+    .quote{
+      font-size:0.7rem;
+      line-height: normal;
     }
   }
