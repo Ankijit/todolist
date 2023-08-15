@@ -1,0 +1,20 @@
+<%- include("partials/navbar.ejs") %>
+<h1  class="listheading">Your list of work to do today</h1>
+
+
+<form action="/todoactivity" method="post" class="todoform">
+    
+    <%  if(locals.todolist){ %>
+        <%todolist.forEach((activity)=> { %>
+            
+            
+           
+            <label for="" class="items"><input type="checkbox" value="" id="">&nbsp; <%= activity %></label>
+            
+            <%}) } %>
+              
+      <input type="text" placeholder="Write a task" name="task" class="items items2">
+    <input type="submit" value="Create task" class="button2" <%= activeOption === 'todoactivity' ? 'selected' : '' %>">
+</form>
+
+<%- include("partials/footer.ejs") %>

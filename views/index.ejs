@@ -1,0 +1,19 @@
+<%- include("partials/navbar.ejs") %>
+
+
+    <form action="/" method="post" class="todoform">
+        <div class="quote">
+
+            <% if(locals.randomquote) {%>
+                <h1 class="quotemotivation"><%= randomquote %>
+                </h1>
+    
+                <% } else{ %>
+                    <h1  class="quotemotivation">Get random quote</h1>
+                <% } %>
+        </div>
+    
+        <input type="submit" value="Get quote of the day" class="button ">
+    </form>
+
+    <%- include("partials/footer.ejs") %>
